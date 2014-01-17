@@ -54,6 +54,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.8.4)
     mysql2 (0.3.14)
+    number_to_indian_currency (1.0.4)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -111,6 +112,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   mysql2
+  number_to_indian_currency
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   therubyracer

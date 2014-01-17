@@ -1,4 +1,6 @@
 class Product < ActiveRecord::Base
+  default_scope :order => 'title'
+
   attr_accessible :description, :image_url, :price, :title
   
   #All the text fields for product must be provided
@@ -8,7 +10,7 @@ class Product < ActiveRecord::Base
     :with => %r{\.(gif|jpg|jpeg|png)\z}i,
     :message => "must be a URL for a GIF, JPG or PNG image."
   }
-  
   # price has to be at least Re 1.
   validates :price, :numericality => {:greater_than_or_equal_to => 1.00}
+  validates :title, :length => {:minimum => 10}
 end
