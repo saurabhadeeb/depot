@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'number_to_indian_currency'
+gem 'jquery-ui-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
